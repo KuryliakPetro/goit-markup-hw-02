@@ -39,7 +39,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     
-    text-decoration: none;
+    text-decoration-line: none;
 }
 .link:hover, :focus {
     color: var(--button-and-hover-color);
@@ -83,7 +83,11 @@ body {
     color: var(--title-text-color);
     background-color: #F5F4FA;
 }
-.button:hover, :focus {
+.button:hover {
+    color: var(--secondary-title-text-color);
+    background-color: var(--button-and-hover-color);
+}
+.button:focus {
     color: var(--secondary-title-text-color);
     background-color: var(--button-and-hover-color);
 }
@@ -125,11 +129,16 @@ body {
     font-size: 16px;
     line-height: 1.62;     
     text-align: center;
+    letter-spacing: inherit;
     
     color: var(--title-text-color);
     background-color: #F5F4FA;
 }
-.button-portfolio:hover, :focus {
+.button-portfolio:hover {
+    color: var(--secondary-title-text-color);
+    background-color: var(--button-and-hover-color);
+}
+.button-portfolio:focus {
     color: var(--secondary-title-text-color);
     background-color: var(--button-and-hover-color);
 }
