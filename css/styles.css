@@ -3,17 +3,23 @@
     --title-text-color: #212121;
     --secondary-title-text-color: #ffffff;
     --button-and-hover-color: #2196F3;
+    --prime-background-color: #2F303A;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     
     color: var(--prime-text-color);    
+}
+
+.link {
+    text-decoration-line: none;
+}
+.list {
+    list-style: none;
 }
 
 /* Logo */
@@ -23,43 +29,37 @@ body {
     font-size: 26px;
     line-height: 1.2;
 
-    color: #000000;
-
-    text-decoration-line: none;    
+    color: #000000;    
 }
 .logo-color {
     color: #2196F3;
 }
 
 /* Nav */
-.link {
-    font-family: 'Roboto';
+.nav-link, .contact-link {   
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     
-    text-decoration-line: none;
+    color: var(--title-text-color);
 }
-.link:hover, :focus {
+.nav-link:hover, :focus {
     color: var(--button-and-hover-color);
 }
-.tel {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-        
-    color: var(--prime-text-color);
-
-    text-decoration-line: none;
+.contact-link {        
+    color: var(--prime-text-color);    
 }
-.tel:hover, :focus {
-    color: var(--button-and-hover-color);
+.contact-link:hover, :focus {
+    color: var(--button-and-hover-color); */
+}
+.current {
+    color: var(--button-and-hover-color)
 }
 
 /* Main */
+.hero {
+    background-color: var(--prime-background-color);
+}
 .main-title {
     font-weight: 900;
     font-size: 44px;
@@ -80,50 +80,46 @@ body {
     align-items: center;
     text-align: center;
             
-    color: var(--title-text-color);
-    background-color: #F5F4FA;
+    color: var(--secondary-title-text-color);
+    background-color: var(--button-and-hover-color);
 }
 .button:hover {
-    color: var(--secondary-title-text-color);
-    background-color: var(--button-and-hover-color);
+    color: var(--title-text-color);
+    background-color: var(--prime-text-color);
 }
 .button:focus {
-    color: var(--secondary-title-text-color);
-    background-color: var(--button-and-hover-color);
+    color: var(--title-text-color);
+    background-color: var(--prime-text-color);
 }
-.title {
+.description-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     
     color: var(--title-text-color);
 }
-.secondary-title {
-    font-weight: 700;
+.section-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     
     color: var(--title-text-color);
 }
-.title-comand {
+.team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;      
         
     color: var(--title-text-color);
 }
-.text-comand {
+.team-text {
     font-size: 16px;
     line-height: 1.2;
-    
-    color: var(--prime-text-color);
 }
 
 /* Potfolio-main */
-.button-portfolio {
+.filtr-button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -134,15 +130,19 @@ body {
     color: var(--title-text-color);
     background-color: #F5F4FA;
 }
-.button-portfolio:hover {
+.activ {
     color: var(--secondary-title-text-color);
     background-color: var(--button-and-hover-color);
 }
-.button-portfolio:focus {
+.filtr-button:hover {
     color: var(--secondary-title-text-color);
     background-color: var(--button-and-hover-color);
 }
-.title-portfolio {    
+.filtr-button:focus {
+    color: var(--secondary-title-text-color);
+    background-color: var(--button-and-hover-color);
+}
+.card-title {    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;       
@@ -150,36 +150,35 @@ body {
     
     color: var(--title-text-color);
 }
-.portfolio-decoration {
-    text-decoration: none;
-}
-.portfolio-text {    
+.card-text {    
     font-size: 16px;
     line-height: 1.88;
+
+    color: var(--prime-text-color);
 }
 
 /* Footer */
+.footer {
+    background-color: var(--prime-background-color)
+}
 .address {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
 
-    text-decoration-line: none;    
+    color: var(--secondary-title-text-color);
 }
-.address:hover, :focus {
-    color: var(--button-and-hover-color);
-}
-.contact {          
-    color: rgba(255, 255, 255, 0.6);
-    background-color: #2F303A;
+.contact {  
+    font-style: normal;
 
-    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A; 
 }
 .contact:hover, :focus{
     color: var(--button-and-hover-color);
 }
-.visually-hidden {x
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -192,3 +191,5 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+
