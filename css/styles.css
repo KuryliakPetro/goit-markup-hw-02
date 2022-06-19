@@ -161,6 +161,9 @@ body {
 .footer {
     background-color: var(--prime-background-color)
 }
+.footer .logo {
+    color: #ffffff;
+}
 .address {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
